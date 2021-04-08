@@ -1,0 +1,30 @@
+{
+    "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+        }
+    ],
+    "description": "A simple-torrent service ported for heroku by blacky",
+    "env": {
+        "PINGER": {
+            "description": "Prevents your free app from sleeping, defaults to false. Make it true to enable auto pinger.",
+            "required": false,
+            "value": "false"
+        },
+        "TITLE": {
+            "description": "Application header.",
+            "required": false,
+            "value": "blacky-rent-WEB"
+        }
+    },
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "logo": "https://raw.githubusercontent.com/iTzBlack007/blacky-rent-WEB/main/logo.png",
+    "name": "blacky-rent-WEB",
+    "repository": "https://github.com/iTzBlack007/blacky-rent-WEB",
+    "success_url": "/"
+}
